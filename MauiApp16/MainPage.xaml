@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp16.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <StackLayout>
+        <Label Text="Disease by Weather" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+        <Picker x:Name="diseasePicker" Title="Select Disease">
+            <Picker.Items>
+                <x:String>Flu</x:String>
+                <x:String>Cough</x:String>
+                <x:String>Fever</x:String>
+                <x:String>Nausea</x:String>
+                <x:String>Headache</x:String>
+                <x:String>Bleeding</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button Text="Predict" Clicked="OnPredictClicked" />
+
+        <Label Text="Prediction:" FontAttributes="Bold" />
+        <Label x:Name="predictionLabel" />
+    </StackLayout>
+
+</ContentPage>
