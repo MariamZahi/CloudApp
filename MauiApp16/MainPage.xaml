@@ -5,7 +5,7 @@
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
     <StackLayout>
-        <Label Text="Disease by Weather" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        <Label Text="Safety by Weather" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 
         <Picker x:Name="diseasePicker" Title="Select Disease">
             <Picker.Items>
@@ -14,7 +14,7 @@
                 <x:String>Fever</x:String>
                 <x:String>Nausea</x:String>
                 <x:String>Headache</x:String>
-                <x:String>Bleeding</x:String>
+                <x:String>Nosebleed</x:String>
             </Picker.Items>
         </Picker>
 
