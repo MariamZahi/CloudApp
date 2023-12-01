@@ -38,9 +38,12 @@ public class MainViewModel : BindableObject
         // Using weatherbit.io
         string apiKey = "d8233951efaa408daa6626fac1913d86";
         string apiEndpoint = "https://api.weatherbit.io/v2.0/forecast/hourly";
-        string city = "Toronto";
-        int hours = 48;
-        string apiUrl = $"{apiEndpoint}?city={city}&hours={hours}&key={apiKey}";
+        double lat = 47.61;
+        double lon = -122.33;
+        string city = "Seattle";
+        DateTime start_date = new DateTime(2020,8,12);
+        DateTime end_date = new DateTime(2021, 3, 1);
+        string apiUrl = $"{apiEndpoint}?lat={lat}&lon={lon}&city={city}&start_date={start_date}&end_date={end_date}&key={apiKey}";
 
         using (HttpClient client = new HttpClient())
         {
