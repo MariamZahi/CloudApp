@@ -30,7 +30,7 @@ public class MainViewModel : BindableObject
 
     public ICommand GetWeatherCommand => new Command(async () => await GetWeather());
 
-    internal Task WeatherCommand => throw new NotImplementedException();
+    public Task WeatherCommand { get; internal set; }
 
     private async Task GetWeather()
     {
