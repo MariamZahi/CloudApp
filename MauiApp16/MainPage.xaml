@@ -22,6 +22,7 @@
 
         <Label Text="Prediction:" FontAttributes="Bold" />
         <Label x:Name="predictionLabel" />
+        <Button Text="Go to Weather API Page" Clicked="OnWeatherApiPageClicked"/>
     </StackLayout>
 
 </ContentPage>
