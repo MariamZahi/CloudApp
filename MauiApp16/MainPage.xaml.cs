@@ -44,5 +44,10 @@ namespace MauiApp16
                     return "No prediction available";
             }
         }
+            private async void OnWeatherApiPageClicked(object sender, EventArgs e)
+            {
+                await Navigation.PushAsync(new WeatherApiPage());
+            }
+        }
     }
-}
+
