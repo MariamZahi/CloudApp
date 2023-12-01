@@ -28,11 +28,10 @@ public class MainViewModel : BindableObject
         }
     }
 
-    public ICommand GetWeatherCommand => new Command(async () => await GetWeather());
+    //public ICommand GetWeatherCommand => new Command(async () => await GetWeather());
 
-    public Task WeatherCommand { get; internal set; }
-
-    private async Task GetWeather()
+   // public async Task WeatherCommand { Ge }
+    public async Task GetWeather()
     {
         // Added API KEY and API ENDPOINT for location that i found in documentation
         // Using weatherbit.io
@@ -41,9 +40,10 @@ public class MainViewModel : BindableObject
         double lat = 47.61;
         double lon = -122.33;
         string city = "Seattle";
+        City = city;
         DateTime start_date = new DateTime(2020,8,12);
         DateTime end_date = new DateTime(2021, 3, 1);
-        string apiUrl = $"{apiEndpoint}?lat={lat}&lon={lon}&city={city}&start_date={start_date}&end_date={end_date}&key={apiKey}";
+        string apiUrl = $"{apiEndpoint}?lat={lat}&lon={lon}&city={city}&start_date={start_date.ToString("yyyy-MM-dd")}&end_date={end_date.ToString("yyyy-MM-dd")}&key={apiKey}";
 
         using (HttpClient client = new HttpClient())
         {
