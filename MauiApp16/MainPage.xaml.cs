@@ -7,6 +7,7 @@ namespace MauiApp16
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage MainPage = new NavigationPage(new LoginPage());
         }
 
         private void OnPredictClicked(object sender, EventArgs e)
