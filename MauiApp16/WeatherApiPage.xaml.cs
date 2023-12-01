@@ -20,7 +20,7 @@ namespace MauiApp16
 
         private async void OnGetWeatherClicked(object sender, EventArgs e)
         {
-            await _viewModel.GetWeather();
+            await _viewModel.WeatherCommand;
             weatherInfoLabel.Text = _viewModel.WeatherInfo;
         }
     }
