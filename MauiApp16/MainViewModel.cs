@@ -66,8 +66,7 @@ public class MainViewModel : BindableObject
     private string ParseWeatherData(string data)
     {
         // Implement the parsing logic based on your weather API response format.
-        // Update this method accordingly.
-        // This is just a placeholder.
+       
         return $"Weather data for {City}: {data}";
     }
 }
