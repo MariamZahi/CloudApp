@@ -37,7 +37,7 @@ public class MainViewModel : BindableObject
         // Added API KEY and API ENDPOINT for location that i found in documentation
         // Using weatherbit.io
         string apiKey = "d8233951efaa408daa6626fac1913d86";
-        string apiEndpoint = "https://api.weatherbit.io/v2.0/forecast/hourly";
+        string apiEndpoint = "https://api.weatherbit.io/v2.0/history/hourly";
         double lat = 47.61;
         double lon = -122.33;
         string city = "Seattle";
